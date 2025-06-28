@@ -20,7 +20,7 @@ app.get('/status', (req: Request, res: Response) => {
 
   sistema_status = damaged_system[status || ""]
   res.json({
-  "damaged_system": sistema_status
+  "damaged_system": status
   });
 });
 app.get('/repair-bay', (req: Request, res: Response) => {
